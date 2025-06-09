@@ -8,24 +8,7 @@ Escolha do horário (normal ou horário de pico “rush”).
 Cálculo do caminho mais curto com base nos tempos de deslocamento.
 Visualização gráfica do grafo com destaque para a rota mais eficiente.
 Interface gráfica simples e intuitiva de utilização tkinter.
-🛠️ Tecnologias e Bibliotecas
-Python 3.x
-NetworkX – modelagem de gráficos
-Matplotlib – visualização do gráfico
-Tkinter – interface gráfica
-Heapq – fila de prioridade para o algoritmo Dijkstra
-⚙️ Como executar o projeto
-Clone ou repositório :
-git clone https://github.com/Theuss21/trabalho-eda-p2.git
-cd trabalho-eda-p2
 
-Instale as dependências:
-
-pip install matplotlib networkx
-
-Execute o programa:
-
-python TrabalhoP2.py
 
 📌 Estrutura do Grafo
 Nós: representam bairros como "Maricá (Centro)", "Itaipuaçu", "Charitas", etc.
