@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Rotas Maricá-Niterói</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Roteador Inteligente de Entregas Urbanas “CityFlow”</h1>
+        <p>Encontre o caminho mais curto entre os pontos usando o algoritmo de Dijkstra.</p>
+
+        <div class="controls">
+            <div class="select-group">
+                <label for="startNode">Ponto de Partida:</label>
+                <select id="startNode"></select>
+            </div>
+            <div class="select-group">
+                <label for="endNode">Ponto de Destino:</label>
+                <select id="endNode"></select>
+            </div>
+            <button id="calculateRoute">Calcular Rota</button>
+        </div>
+
+        <div id="results" class="results">
+            <p><strong>Distância mais curta:</strong> <span id="shortestDistance">--</span></p>
+            <p><strong>Caminho:</strong> <span id="shortestPath">--</span></p>
+            
+        </div>
+
+        <div id="network" class="network-container">
+            </div>
+
+        <div class="instructions">
+            <h2>Instruções:</h2>
+            <ul>
+                <li>Selecione o **Ponto de Partida** e o **Ponto de Destino** nas caixas de seleção.</li>
+                <li>Clique em **"Calcular Rota"** para ver o caminho mais curto no grafo.</li>
+                <li>Você pode arrastar os nós, dar zoom e mover o grafo para uma melhor visualização.</li>
+                <li>As arestas (linhas) são as ruas e os números sobre elas representam o tempo estimado de viagem em minutos (considerando o rush).</li>
+                <li>O **caminho mais curto** será destacado em **vermelho**.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
